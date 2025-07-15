@@ -5,4 +5,4 @@ A real-time chat platform inspired by Discord and Telegram, but lighter, faster,
 ## Project Structure
 
 - `/client`: Next.js frontend
-- `/server`: Express backend
+- `/server`: Express backend"# line"
