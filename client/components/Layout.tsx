@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import { useAuth } from '../utils/useAuth';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const { user, logout } = useAuth();
   return (
     <div>
@@ -21,15 +22,6 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <p>&copy; 2023 Line App</p>
-      </footer>
-    </div>
-  );
-};
-        </nav>
-      </header>
-      <main>{children}</main>
-      <footer>
-        {/* Footer content will go here */}
       </footer>
     </div>
   );
